@@ -38,6 +38,14 @@ a.activo{
     transition: opacity 0.5s linear 1s;
 }
 
+p.proyect{
+    font-size: 13px;
+    color: #a1a1a1;
+    letter-spacing: .5px;
+    line-height: 1.8;
+    margin-top: 5px;
+}
+
 .pie{
     font-size: 13px;
     color: #a1a1a1;
@@ -123,6 +131,11 @@ a.activo{
     position: absolute;
     right: -40px;
     top: -40px;
+}
+  
+.img:hover{
+    filter: opacity(.5);
+    transition: .3s ease;
 }
 
 @media screen and (max-width: 991px) {
