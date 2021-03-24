@@ -1,0 +1,147 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #0c0c0c;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #a1a1a1;
+}
+
+.galery{
+    width: 100%;
+}
+
+li{
+    color: white !important;
+    list-style: none;
+    line-height: 2;
+}
+
+a, a:hover{
+    color: #a1a1a1;
+}
+
+a.activo{
+    color: white;
+    text-decoration: underline;
+}
+
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.pie{
+    font-size: 13px;
+    color: #a1a1a1;
+    letter-spacing: .5px;
+    line-height: 2;
+    position: fixed;
+    left: 50;
+    bottom: 0;
+    width: 250px;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid .item-conenido{
+    position: relative;
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay.activo{
+    display: flex;
+}
+
+.overlay img{
+    max-width: 100%;
+}
+
+/*
+.overlay .descripcion{
+    display: block;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 50%;
+    color: #a1a1a1;
+}*/
+
+.contenedor-img{
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup{
+    background: none;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        font-size: 45px;
+    }
+
+    .main, .pie{
+        text-align: center;
+        width: 100%;
+    }
+
+    .pie, .fixed{
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid .item{
+        width: calc(50% - 20px);
+    }
+}
