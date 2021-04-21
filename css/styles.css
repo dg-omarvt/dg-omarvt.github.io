@@ -9,7 +9,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-size: 1.5vw;
     font-weight: bold;
-    color: #a1a1a1;
+    color: #ffffff;
 }
 
 .galery{
@@ -43,7 +43,6 @@ p.proyect{
     color: #a1a1a1;
     letter-spacing: .5px;
     line-height: 1.8;
-    margin-top: 5px;
 }
 
 .pie{
@@ -55,6 +54,13 @@ p.proyect{
     left: 50;
     bottom: 0;
     width: 250px;
+}
+
+b.title-list{
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: .5px;
+    line-height: 1.8;
 }
 
 .fixed{
@@ -153,8 +159,28 @@ p.proyect{
     }
 }
 
+@media screen and (max-width: 768px) {
+    p.proyect{
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .grid .item{
         width: calc(50% - 20px);
+    }
+
+    b.title-list{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    p.proyect{
+        font-size: 11px;
+    }
+
+    b.title-list{
+        font-size: 11px;
     }
 }
