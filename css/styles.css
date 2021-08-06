@@ -60,6 +60,13 @@ p.proyect{
     width: 250px;
 }
 
+.color_p{
+    font-size: 13px;
+    color: #a1a1a1;
+    letter-spacing: .5px;
+    line-height: 2;
+}
+
 b.title-list{
     font-size: 13px;
     color: #ffffff;
