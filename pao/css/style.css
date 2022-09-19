@@ -54,6 +54,14 @@ body{
     align-items: center;
 }
 
+.bg_cafe{
+    background-image: url(../img/cafe.svg);
+    background-repeat: no-repeat;
+    background-position: 681px -50px !important;
+    background-size: 100% 900px;
+    background-position: center center;
+}
+
 .raiz{
     background-image:url('../img/raiz.svg');
     background-repeat: no-repeat;
@@ -175,7 +183,6 @@ h1.cafe{
     .space{
         margin-bottom: 150px;
     }
-    
 }
 
 @media (max-width: 1199px) {
@@ -201,6 +208,10 @@ h1.cafe{
         margin-bottom: 50px;
     }
     
+    .bg_cafe{
+        background-position: 500px -250px !important;
+        background-size: 100% 1200px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -262,6 +273,11 @@ h1.cafe{
 
     .border_l{
         margin: 0 auto;
+    }
+
+    .bg_cafe{
+        background-position: 0 0 !important;
+        background-size: 100% auto;
     }
     
 }
