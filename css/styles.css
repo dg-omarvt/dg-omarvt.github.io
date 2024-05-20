@@ -76,6 +76,7 @@ b.title-list{
 
 .fixed{
     position: fixed;
+    width: 250px;
 }
 
 .grid.imagenes-cargadas{
@@ -160,7 +161,7 @@ b.title-list{
         font-size: 45px;
     }
 
-    .main, .pie{
+    .main, .pie, .proyect{
         text-align: center;
         width: 100%;
     }
@@ -182,7 +183,7 @@ b.title-list{
     }
 
     b.title-list{
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 
