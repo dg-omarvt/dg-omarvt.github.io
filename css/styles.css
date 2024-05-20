@@ -42,7 +42,7 @@ a.activo{
     transition: opacity 0.5s linear 1s;
 }
 
-p.proyect{
+p.proyect, span{
     font-size: 13px;
     color: #a1a1a1;
     letter-spacing: .5px;
@@ -161,7 +161,7 @@ b.title-list{
         font-size: 45px;
     }
 
-    .main, .pie, .proyect{
+    .main, .pie, p.proyect, span{
         text-align: center;
         width: 100%;
         display: flex;
@@ -179,7 +179,7 @@ b.title-list{
 }
 
 @media screen and (max-width: 768px) {
-    p.proyect{
+    p.proyect, span{
         text-align: center;
     }
 }
@@ -192,14 +192,12 @@ b.title-list{
     b.title-list{
         font-size: 10px;
     }
+
+    p.proyect, span{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 320px) {
-    p.proyect{
-        font-size: 11px;
-    }
 
-    b.title-list{
-        font-size: 11px;
-    }
 }
